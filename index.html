@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Halaman resmi untuk mengunduh logo PSNU PAGARNUSA dalam format PDF, PNG, dan Adobe Illustrator." />
+  <title>Logo PN</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: linear-gradient(135deg, #e0f7f6, #ffffff);
+      --card: #ffffff;
+      --accent: #169a93;
+      --accent-dark: #107b76;
+      --text: #1e293b;
+      --muted: #64748b;
+      --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      font-family: 'Inter', sans-serif;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+      color: var(--text);
+    }
+
+    body {
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card {
+      width: 95%;
+      max-width: 760px;
+      background: var(--card);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      padding: 36px;
+      position: relative;
+      overflow: hidden;
+      transform: translateY(10px);
+      animation: slideUp 0.8s ease forwards;
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      padding-bottom: 16px;
+    }
+
+    .logo-thumb {
+      width: 100px;
+      height: 100px;
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #eafffa, #dff8f5);
+      border: 1px solid rgba(0, 0, 0, 0.04);
+      position: relative;
+      transition: transform 0.4s ease;
+      user-select: none;
+    }
+
+    .logo-thumb:hover {
+      transform: scale(1.05);
+    }
+
+    .logo-thumb::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: transparent;
+      cursor: not-allowed;
+    }
+
+    .logo-thumb img {
+      max-width: 100%;
+      max-height: 100%;
+      pointer-events: none;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+
+    h1 {
+      font-size: 22px;
+      margin: 0 0 4px 0;
+      font-weight: 700;
+    }
+
+    p.lead {
+      color: var(--muted);
+      margin: 4px 0 0;
+      font-size: 14px;
+    }
+
+    section {
+      margin-top: 24px;
+      animation: fadeIn 1.3s ease;
+    }
+
+    .downloads {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 18px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      transition: all 0.25s ease;
+      border: none;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .btn.primary {
+      background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+      color: #fff;
+    }
+
+    .btn.secondary {
+      background: #f9fafb;
+      color: var(--text);
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+    }
+
+    .btn.contact {
+      background: linear-gradient(90deg, #0ea5e9, #0284c7);
+      color: #fff;
+      margin-top: 18px;
+    }
+
+    .meta {
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 13px;
+      font-style: italic;
+    }
+
+    footer {
+      margin-top: 28px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    .watermark {
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0.02) 0,
+        rgba(0, 0, 0, 0.02) 1px,
+        transparent 1px,
+        transparent 20px
+      );
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    @media (max-width: 600px) {
+      .card { padding: 24px; }
+      .logo-thumb { width: 80px; height: 80px; }
+      h1 { font-size: 20px; }
+      .btn { flex: 1 1 100%; }
+    }
+  </style>
+</head>
+<body oncontextmenu="return false">
+  <main class="card" role="main" aria-labelledby="title">
+    <div class="watermark"></div>
+    <header>
+      <div class="logo-thumb">
+        <img src="assets/LOGO PAGARNUSA.png" alt="Logo Resmi PSNU PAGARNUSA" />
+      </div>
+      <div>
+        <h1 id="title">Download Logo Resmi PSNU PAGARNUSA</h1>
+        <p class="lead">
+          Logo resmi organisasi Pencak Silat Nahdlatul Ulama Pagar Nusa (PSNU PAGARNUSA).
+        </p>
+      </div>
+    </header>
+
+    <section>
+      <div class="downloads">
+        <a class="btn primary" href="assets/LOGO PAGARNUSA.pdf" download="LOGO PAGARNUSA.pdf">⤓ PDF (Print)</a>
+        <a class="btn secondary" href="assets/LOGO PAGARNUSA.png" download="LOGO PAGARNUSA.png">⤓ PNG (Digital)</a>
+        <a class="btn secondary" href="assets/LOGO PAGARNUSA.ai" download="LOGO PAGARNUSA.ai">⤓ Adobe Illustrator</a>
+        <a class="btn secondary" href="assets/LOGO PAGARNUSA.zip" download="LOGO PAGARNUSA.zip">⤓ Semua Format (ZIP)</a>
+      </div>
+
+      <p class="meta" id="infoText">Memuat informasi file...</p>
+
+      <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHvnnqvXxRNJGdXVjKQWsJvFmvLTtzZBVMqStZngRtSvfZMGQspJpvNjPgLZTfTgzzWhMXx" class="btn contact">✉️ Kirim Masukan</a>
+    </section>
+
+    <footer>
+      <p>© 2025 PSNU PAGARNUSA. Hak cipta dilindungi undang-undang.</p>
+      <p>Penggunaan logo hanya untuk kepentingan resmi organisasi.</p>
+    </footer>
+  </main>
+
+  <script>
+    // Cegah drag, klik kanan, atau save image
+    document.addEventListener("dragstart", e => e.preventDefault());
+    document.addEventListener("keydown", e => {
+      if ((e.ctrlKey || e.metaKey) && ["s", "u", "p", "i"].includes(e.key.toLowerCase())) {
+        e.preventDefault();
+        alert("Akses fitur developer & simpan dinonaktifkan untuk keamanan logo.");
+      }
+    });
+
+    // Tampilkan ukuran file
+    async function showFileSizes() {
+      const files = [
+        { path: "assets/LOGO PAGARNUSA.pdf", label: "PDF" },
+        { path: "assets/LOGO PAGARNUSA.png", label: "PNG" },
+        { path: "assets/LOGO PAGARNUSA.ai", label: "AI" },
+        { path: "assets/LOGO PAGARNUSA.zip", label: "ZIP" }
+      ];
+      const infoEl = document.getElementById("infoText");
+      const results = [];
+      for (const f of files) {
+        try {
+          const res = await fetch(f.path, { method: "HEAD" });
+          if (!res.ok) throw new Error("not found");
+          const size = res.headers.get("content-length");
+          const kb = size ? (Math.round(size / 1024)) + " KB" : "Tidak diketahui";
+          results.push(`${f.label}: ${kb}`);
+        } catch {
+          results.push(`${f.label}: ✅`);
+        }
+      }
+      infoEl.textContent = "Jenis file → " + results.join(" · ");
+    }
+
+    showFileSizes().catch(() => {
+      document.getElementById("infoText").textContent = "Informasi file tidak tersedia.";
+    });
+  </script>
+</body>
+</html>
